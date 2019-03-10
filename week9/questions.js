@@ -103,122 +103,146 @@ const questions = {
     },
     // -----------------SQL
     9: {
-        question: ``,
+        question: `SQL is a DB language that is kind of like...`,
         answers: {
-            a: "",
-            b: "",
-            c: "",
-            d: ""
+            a: "JSON",
+            b: "Excel",
+            c: "YAML",
+            d: "None of the above"
         }
     },
     10: {
-        question: ``,
+        question: `The basic CRUD operations for SQL are`,
         answers: {
-            a: "",
-            b: "",
-            c: "",
-            d: ""
+            a: "INSERT, SELECT, UPDATE, DELETE",
+            b: "INSERT, SEARCH, UPDATE, DELETE",
+            c: "INSERT, SELECT, UPPEND, DELETE",
+            d: "INSERT, SELECT, UPDATE, DEMOLISH"
         }
     },
     11: {
-        question: ``,
+        question: `What's up with this query?
+        SELECT * FROM furniture WHERE price > 200;`,
         answers: {
-            a: "",
-            b: "",
-            c: "",
-            d: ""
+            a: "It won't work",
+            b: "It's fine",
+            c: "It must use aliases",
+            d: "a and c"
         }
     },
     12: {
-        question: ``,
+        question: `Assuming this is how we create our table:
+            CREATE TABLE Dog(
+                id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                name VARCHAR(50),
+                color VARCHAR(50)
+            )
+
+            Is this query ok?
+
+            INSERT INTO Dog VALUES("Snoopy", "White");
+        `,
         answers: {
-            a: "",
-            b: "",
-            c: "",
-            d: ""
+            a: "Yes",
+            b: "No, you need to insert an `id`",
+            c: "No, you need a placeholder for the `id`",
+            d: "No, you need to specifiy the column names"
         }
     },
     13: {
-        question: ``,
+        question: `A Primary Key (PK) is`,
         answers: {
-            a: "",
-            b: "",
-            c: "",
-            d: ""
+            a: "Always optional",
+            b: "Always required",
+            c: "Sometimes required",
+            d: "Highly recommended",
+            e: "c and d",
+            f: "None of the above"
         }
     },
     14: {
-        question: ``,
+        question: `The way we store arrays in SQL is by...`,
         answers: {
-            a: "",
-            b: "",
-            c: "",
-            d: ""
+            a: "Storing a JSON.stringify'ed version of the array",
+            b: "Storing multiple rows dynamically for each item in the array",
+            c: "Using a join table",
+            d: "Using a separate table and a Foreign Key (FK)"
         }
     },
     15: {
-        question: ``,
+        question: `An employer and all her office documents is an example of a...`,
         answers: {
-            a: "",
-            b: "",
-            c: "",
-            d: ""
+            a: "1:1 relationship",
+            b: "1:M relationship",
+            c: "M:N relationship",
+            d: "None of the above"
         }
     },
     16: {
-        question: ``,
+        question: `In an M:N relationship, the join table should have...`,
         answers: {
-            a: "",
-            b: "",
-            c: "",
-            d: ""
+            a: "The important columns of both tables",
+            b: "As few columns as necessary to make sense",
+            c: "Only the ID columns",
+            d: "None of the above"
+        }
+    },
+    17: {
+        question: `The concept of "Data Integrity"...`,
+        answers: {
+            a: "Means that we don't want to repeat data throughout separate tables",
+            b: "Is similar to the DRY principle",
+            c: "Both a and b",
+            d: "None of the above"
         }
     },
     //---------------SEQUELIZE
-    17: {
-        question: ``,
-        answers: {
-            a: "",
-            b: "",
-            c: "",
-            d: ""
-        }
-    },
     18: {
-        question: ``,
+        question: `When we use sequelize to insert a row into a table that has a PK defined...`,
         answers: {
-            a: "",
-            b: "",
-            c: "",
-            d: ""
+            a: "We don't need to use a placeholder anymore because sequelize creates IDs for us",
+            b: "We still need a placeholder when we use the `query` command",
+            c: "We don't even need a PK when using sequelize",
+            d: "None of the above"
         }
     },
     19: {
-        question: ``,
+        question: `The async/await keywords...`,
         answers: {
-            a: "",
-            b: "",
-            c: "",
-            d: ""
+            a: "Don't work in sequelize",
+            b: "Need some configuration to work in sequelize",
+            c: "Work fine in sequelize",
+            d: "Work only on SELECTs in sequelize"
         }
     },
-    //---------------LEAN CODE
+    //---------------CLEAN CODE
     20: {
-        question: ``,
+        question: `How can we improve this code?
+        
+        const getstuff = async function(){
+            let stuff = await $.get('/...', function(res){
+                //old code
+            })
+
+            return stuff
+        }
+        
+        `,
         answers: {
-            a: "",
-            b: "",
-            c: "",
-            d: ""
+            a: "Give a more indicative name to the function",
+            b: "Remove the callback from the $.get",
+            c: "Remove the dead code",
+            d: "Give a more indicative name to `stuff`",
+            e: "All of the above"
         }
     },
     21: {
-        question: ``,
+        question: `Whom should you keep in mind when writing code?`,
         answers: {
-            a: "",
-            b: "",
-            c: "",
-            d: ""
+            a: "Yourself",
+            b: "Your future self",
+            c: "Your team",
+            d: "A psycho that knows your home address"
         }
     }
 }

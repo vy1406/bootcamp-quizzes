@@ -3,8 +3,8 @@
 //Push your results when finished
 
 const answers = {
-    1: "d",
-    2: "d",
+    1: "d", // 
+    2: "d", // V    
     3: "d",
     4: "d",
     5: "f",

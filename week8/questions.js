@@ -207,7 +207,7 @@ const questions = {
             a: "We can’t properly use the Link tag",
             b: "We should use a normal a tag with an href attribute to access it",
             c: "Neither of the above",
-            d: "Both of the above"
+            d: "Both of the above"  
         }
     }
 }
